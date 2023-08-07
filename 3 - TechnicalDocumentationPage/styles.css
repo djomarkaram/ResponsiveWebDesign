@@ -1,0 +1,158 @@
+*:not(code) {
+  background-color: #1d1e22;
+  color: #fff;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5rem;
+  scroll-behavior: smooth;
+}
+
+main {
+  margin: 0 35px 0 330px;
+  position: absolute;
+  margin-top: 30px;
+}
+
+section {
+  margin-bottom: 70px;
+}
+
+section > header {
+  margin-bottom: 25px;
+  font-size: 1.6rem;
+  letter-spacing: 0.3rem;
+  color: #cdb351;
+/*   font-weight: bold; */
+}
+
+p, ul {
+  text-align: justify;
+  text-justify: inter-word;
+  margin-top: 1.3rem;
+}
+
+code {
+  display: block;
+  background-color: #060606;
+  color: #a5bd7e;
+  margin: 12px 0;
+  padding: 15px;
+  border-radius: 5px;
+  white-space: pre-line;
+  line-height: 2rem;
+}
+
+#Reference > p > a {
+  color: red;
+}
+
+#Reference > p > a:hover {
+  color: #cdb351;
+}
+
+#navbar {
+/*   background-color: white; */
+  position: fixed;
+  min-width: 300px;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  border-right: solid;
+}
+
+#navbar > header {
+  text-align: center;
+  font-size: 1.7rem;
+  padding: 20px 0 0 0;
+}
+
+#navbar > ul {
+  padding: 0;
+  height: 87%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar > ul > li{
+  list-style: none;
+  border-top: 1px solid;
+}
+
+#navbar > ul > li > a {
+  display: block;
+  color: #cdb351;
+  text-decoration: none;
+  padding: 10px 0 10px 30px;
+  font-size: 1.1rem;
+}
+
+#navbar > ul > li > a:hover {
+  background-color: white;
+  color: red;
+  font-size: 1.2rem;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+/*   For mobile devices */
+  #navbar {
+    position: absolute;
+    width: 100%;
+    height: 270px;
+    margin: 0;
+    padding: 0;
+    border-right: none;
+  }
+  
+  #navbar > ul {
+    height: 100%;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+  }
+  
+  main {
+    position: relative;
+    margin: 380px 0 25% 0;
+    padding: 20px;
+  }
+  
+  p, ul {
+  text-align: left;
+  text-justify: auto;
+  }
+  
+  code {
+    font-size: 0.8rem;
+  }
+  
+  #myBtn {
+    bottom: 0;
+    right: 0;
+    margin-bottom: 25%;
+    margin-right: 0;
+  }
+  
+}
+
+/* The following code was taken from: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 35px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #cdb351; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 1.2rem; /* Increase font size */
+}
+
+#myBtn:hover {
+  color: red;
+  background-color: white;
+}

@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: Tahoma, Arial, sans-serif;
+  scroll-padding-top: 100px; /* height of sticky header */
+}
+
+body {
+/*   background-color: #0f0f15; */
+  background-color: #1d1e22;
+  color: #f7f3f0;
+}
+
+main {
+  min-width: 320px;
+  width: 80%;
+  max-width: 900px;
+  margin: 120px auto 50px;
+  padding: 0 20px;
+}
+
+section {
+  margin: 0px auto 50px;
+}
+
+/* ==========HEADER SECTION========== */
+
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  display: block;
+  background-color: #060606;
+  box-shadow: 0 0 5px #ce99ff;
+/*   overflow-y: auto;
+  overflow-x: hidden; */
+  overflow: auto;
+  z-index: 100; /* Set the navigation bar to ALWAYS be on to of any content */
+}
+
+.inner-header {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.logo-container {
+  height: 100%;
+  display: table;
+  float: left;
+/*   background: red; */
+}
+
+.logo-container > img {
+  display: block;
+  height: 50px;
+  padding: 15px 15px 10px 0;
+  margin: 15px 15px;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+}
+
+#nav-bar {
+  height: 100%;
+}
+
+.navigation {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end; /* Shift Nav bar links to of inner header */
+  align-items: center; /* Center Nav bar links vertically in the middle */
+}
+
+.target {
+  padding-top: 90px;
+  background: blue;
+}
+
+.navigation > a {
+  margin: 0 6px;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #f1f1f1;
+  border: 2px solid #f1f1f1;
+  border-radius: 5px;
+}
+
+.navigation > a:last-child {
+  margin-right: 0;
+}
+
+.navigation > a:hover {
+  background-color: #9933cc;
+  border-color: #9933cc;
+  transition: 0.2s;
+}
+
+/* FORM SECTION */
+#form > h1{
+  text-align: center;
+  font-weight: normal;
+  font-size: 1.9rem;
+  color: #fff;
+}
+
+#form-section {
+  margin-bottom: 80px;
+}
+
+#form > input {
+  width: 300px;
+  height: 35px;
+  display: block;
+  margin: 15px auto;
+  padding: 5px 0px 5px 10px;
+  outline: none;
+  border: none;
+}
+
+#form > input[type="email"]:hover {
+  width: 300px;
+  height: 35px;
+  display: block;
+  margin: 15px auto;
+  padding: 5px 0px 5px 10px;
+  box-shadow: 0 0 0px 2px #9933cc;
+  transition: 0.2s;
+}
+
+#form > input[type="email"]:focus {
+  width: 300px;
+  height: 35px;
+  display: block;
+  margin: 15px auto;
+  padding: 5px 0px 5px 10px;
+  box-shadow: 0 0 0px 2px #9933cc;
+  transition: 0.2s;
+  font-family: Verdana;
+}
+
+#form > input[type="email"]::placeholder {
+  font-family: Verdana;
+}
+
+#form > input[type="submit"] {
+  width: 140px;
+  padding: 8px 0;
+  background-color: #ce99ff;
+  color: black;
+  border: 0;
+  border-radius: 5px;
+  transition: 0.1s;
+  font-size: 1.05rem;
+}
+
+#form > input[type="submit"]:hover {
+  background-color: #9933cc;
+  color: white;
+  outline: none;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+/* ==========FEATURES SECTION========== */
+#features > h2 {
+  font-size: 1.6rem;
+  margin-bottom: 7px;
+}
+
+#features > h2 > span {
+  font-weight: normal;
+  font-style: italic;
+  color: #ce99ff;
+}
+
+#features > p {
+  margin-bottom: 50px;
+}
+
+/* ==========HOW IT WORKS SECTION========== */
+#video {
+  height: 400px;
+  width: 70%;
+  max-width: 600px;
+  display: block;
+  margin: 70px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px 0 #ce99ff;
+  /*box-shadow: horizontal offset, vertical offset, blurr effect, width, color */
+}
+
+/* ==========PRICING SECTION========== */
+
+#pricing {
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#pricing > div {
+/*   flex: 1 1 0px; */
+  width: calc(100% / 3.3);
+  margin: 0 5px;
+  text-align: center;
+  padding: 0 10px 10px 10px;
+  border: double #cc99e6;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out 0ms;
+  /* transition property is defined as: duration timing-function delay */
+}
+
+#pricing > div:hover {
+  transform: translate(0, -20px);
+  background: #ce99ff;
+}
+
+#pricing > div > h3 {
+  margin: 10px 0 15px 0;
+  text-transform: uppercase;
+  background: #ce99ff;
+  color: black;
+}
+
+
+#pricing > div > h1{
+  margin: 10px 0;
+}
+
+#pricing > div > ul{
+  margin-top: 30px;
+}
+
+#pricing > div > ul > li{
+  margin: 20px 0;
+}
+
+footer {
+  background: #060606;
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  min-width: 320px;
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+footer > div > ul > li {
+  margin: 10px;
+}
+
+.reference {
+  margin: 10px;
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+.reference > a {
+  color: #CE99FF;
+}
+
+.reference > a:hover {
+  color: #9933CC;
+}
+
+
+@media (max-width: 865px) {
+  html {
+    scroll-padding-top: 170px; /* height of sticky header */
+  }
+  
+  #header {
+    height: 150px;
+  }
+  
+  .inner-header {
+    display: flex;
+    flex-direction: column;
+    justify-contents: center;
+    align-items: center;
+  }
+  
+  .logo-container > img {
+    width: 250px;
+    margin-top: 10px;
+  }
+  
+  main {
+    margin-top: 160px;
+  }
+  
+  #pricing {
+    flex-direction: column;
+  }
+  
+  #pricing > div {
+    width: 300px;
+    height: 300px;
+    margin: 20px auto 20px;
+    transform: translate(0, -20px);
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 650px) {  
+  main {
+    padding: 0;
+    width: 95%;
+  }
+  
+  .inner-header {
+    width: 100%;
+    display: flex;
+  }
+  
+  .logo-container {
+/*     width: 100%;
+    display: flex; */
+    display: none;
+  }
+  
+  .logo-container > img {
+    width: 300px;
+    display: block;
+    margin: 15px auto 0;
+/*     background: red; */
+  }
+  
+  #nav-bar {
+/*     background: orange; */
+    width: 100%;
+  }
+  
+  .navigation {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .navigation > a {
+    display: block;
+    width: 90%;
+    padding: 15px;
+    border-radius: 0;
+    border: none;
+  }
+  
+  .navigation > a:last-of-child {
+    margin-bottom: 10px;
+  }
+  
+  .navigation > .active {
+    border-radius: 0;
+  }
+  
+  #video {
+    height: 230px;
+    width: 85%;
+    box-shadow: none;
+  }
+  
+  footer {
+    padding: 0;
+    width: 95%;
+  }
+}

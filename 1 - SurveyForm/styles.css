@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box; /* Prevents padding from affecting width and height of elements! */
+  /* box-sizing is VERY important!!!!! */
+}
+
+body {
+	background-image: URL(https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+	background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  font-family: verdana;
+/*   outline: 2px solid black; */
+}
+
+h1 {
+	margin-top: 1.5rem;
+  text-align: center;
+}
+
+p {
+	font-style: italic;
+	padding-bottom: 20px;
+  text-align: center;
+}
+
+form {
+	background-color: rgba(0, 0, 0, 0.7);
+	border-radius: 10px;
+	border: 3px solid transparent;
+	max-width: 650px;
+	min-width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 80px;
+	padding: 10px 30px 10px 30px;
+}
+
+fieldset {
+	border: none;
+}
+
+label {
+	display: block;
+	margin: 1rem 0;
+	color: #ffffff;
+  padding: 5px 0
+}
+
+input, select, textarea{
+	width: 100%;
+  min-height: 2.7em;
+	border-radius: 5px;
+	border: 1px solid #ffffff;
+  margin-top: 4px;
+  margin-bottom: 7px;
+  font-family: "verdana";
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+input:focus, select:focus, textarea:focus {
+  border:none;
+  outline: 3px solid #005cc8;
+  transition: 0.2s;
+}
+
+.inline {
+	display: inline;
+	vertical-align: middle;
+	width: unset;
+}
+
+input[type="radio"] {
+  width: 17px;
+  margin: -10px 5px -10px 0;
+  padding: 0;
+  outline: none;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  margin: -10px 5px -10px 0;
+  outline: none;
+}
+
+textarea {
+  outline: 0;
+  margin-top: -10px;
+  padding-top: 5px;
+}
+
+input[value="SUBMIT"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	width: 100%;
+	min-height: 50px;
+  max-height: 50px;
+	font-size: 1.5rem;
+	border-color: #005cc8;
+	background-color: #005cc8;
+  color: white;
+	font-style: bold;
+  cursor: pointer
+}
